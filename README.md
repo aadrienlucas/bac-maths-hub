@@ -46,3 +46,11 @@ python3 app.py
 ```
 
 Visits `http://127.0.0.1:8080` same as before.
+
+## Structure (v2)
+
+- `app.py` — the Flask app (pages, progress tracking, exams).
+- `content.py` — **all the course content**: 10 chapters, 100 exercises, formulas,
+  and the Yvan Monka video / PDF links. Edit this file to add exercises or chapters.
+  Both files must be committed and pushed for Render to deploy the update.
+- Maths are written in LaTeX (`\\( ... \\)`) and rendered by KaTeX from a CDN.
